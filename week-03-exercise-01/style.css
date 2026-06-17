@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+    background-color: #9DEBB8;
+    margin: 40px;
+    padding: 8px;
+}
+
+.card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #B89DEB;
+    border: 6px dashed #EBB89D;
+}
+
+h1 {
+    color:#EBB89D;
+    font-size: 36px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+p {
+    color: #9DEBB8;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
