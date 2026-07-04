@@ -123,41 +123,31 @@ body {
     color: var(--dark);
 }
 
-/* Skills Grid */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+/* Skills & Projects - Updated to use Flexbox */
+.skills-grid, .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-lg);
+    justify-content: center;
 }
 
-.skill-card {
+.skill-card, .project-card {
+    flex: 1;
     background: white;
-    padding: var(--spacing-xl);
+    padding: var(--spacing-md);
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    min-width: 280px;
 }
 
+/* Skills Grid */
 .skill-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* Projects */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: var(--spacing-lg);
-}
-
-.project-card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
